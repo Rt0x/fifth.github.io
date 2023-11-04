@@ -1,49 +1,16 @@
-const radios = document.querySelectorAll('input[type="radio"]');
-const but = document.querySelector('button');
-
-function calculateCost() {
-  let size = 0;
-  let crust = 0;
-  let toppings = 0;
-
-  // Get selected size
-  for (let i = 0; i < radios.length; i++) {
-    if (radios[i].checked) {
-      size = parseFloat(radios[i].value);
-      break;
+function calc() {
+    var type_flowers = document.getElementById("type_cars");
+    var count = document.getElementById("count").value;
+    if(count==""){alert("Вы не указали количество");}
+    else if(count<0){alert("Количество не может быть отрицательным");}
+    else{
+      var price = 0;
+      price += parseInt(type_cars.options[type_cars.selectedIndex].value);
+      price = parseInt(count) * price;
+      document.getElementById('result').innerHTML = "Стоимость равна: "+ price +" р.";
     }
-  }
-
-  // Get selected crust
-  const crustSelect = document.getElementById('crust');
-  crust = parseFloat(crustSelect.value);
-
-  // Get selected toppings
-  const toppingsSelect = document.getElementById('toppings');
-  toppings = parseFloat(toppingsSelect.value);
-
-  // Calculate total cost
-  const totalCost = size + crust + toppings;
-
-  // Display total cost
-  const costDisplay = document.getElementById('cost');
-  costDisplay.textContent = totalCost.toFixed(2);
 }
 
-function toggleFields() {
-  const extraFields = document.getElementById('extra-fields');
-  
-  if (but.checked) {
-    extraFields.style.display = 'block';
-  } else {
-    extraFields.style.display = 'none';
-  }
-}
-
-// Add event listener to calculate button
-but.addEventListener('click', calculateCost);
-
-// Add event listener to toggle button
-radios.forEach((radio) => {
-  radio.addEventListener('change', toggleFields);
+document.addEventListener("DOMContentLoaded", function(){
+    but.addEventListener('click', calc);
 });
