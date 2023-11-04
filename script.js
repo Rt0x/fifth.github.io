@@ -1,5 +1,5 @@
 function calc() {
-    var type_flowers = document.getElementById("type_cars");
+    var type_cars = document.getElementById("type_cars");
     var count = document.getElementById("count").value;
     if(count==""){alert("Вы не указали количество");}
     else if(count<0){alert("Количество не может быть отрицательным");}
