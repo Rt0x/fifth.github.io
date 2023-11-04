@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Fomenko</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <header class="fluid-container mb-4 bg-light d-flex flex-wrap justify-content-around">
+            <div class="d-flex align-items-center p-3">
+                <img src="logo-image.png" class="img-fluid me-2" width="50" height="40" alt="BMW">
+                <div class="fs-4">BMW Motors</div>
+                <ul class="nav p-3">
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Меню
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="nav-link active" href="#list">Каталог</a></li>
+                                <li><a class="nav-link active" href="#calculator">Калькулятор</a></li>
+                                <li><a class="nav-link active" href="#contact">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#list">Каталог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#calculator">Калькулятор</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Контакты</a>
+                    </li>
+                </ul></header>
+                <div class="contant">
+                    <div id="list">
+                       <p style="text-align:center"><img src="bmw m3.webp" alt="bmw m3 competition" width="35%"></p>
+                       <p style="text-align: center"> Наименование: BMW M3 Competition; Кузов: G80</p>
+                       <p style="text-align:center"> Год выпуска: 2023; <mark>Цена: 13 990 000 ₽</mark></p>
+                       <p style="text-align:center"><img src="bmw m5.jpg" alt="bmw m5 competition" width="35%"></p>
+                       <p style="text-align: center"> Наименование: BMW M5 Competition; Кузов: F90</p>
+                       <p style="text-align:center"> Год выпуска: 2023; <mark>Цена: 11 450 000 ₽</mark></p>
+                       <p style="text-align:center"><img src="bmw-m3-e46.webp" alt="bmw m3 bmw-m3-e46" width="35%"></p>
+                       <p style="text-align: center"> Наименование: BMW M3; Кузов: E46</p>
+                       <p style="text-align:center"> Год выпуска: 2012; <mark>Цена: 2 850 000 ₽</mark></p>
+                       <p style="text-align:center"><img src="x5m.jpg" alt="bmw x5m" width="35%"></p>
+                       <p style="text-align: center"> Наименование: BMW X5M; Кузов: F85</p>
+                       <p style="text-align:center"> Год выпуска: 2017; <mark>Цена: 5 600 000 ₽</mark></p>
+                       <p style="text-align:center"><img src="x6m.jpg" alt="bmw x6m" width="35%"></p>
+                       <p style="text-align: center"> Наименование: BMW X6M; Кузов: F96</p>
+                       <p style="text-align:center"> Год выпуска: 2023; <mark>Цена: 19 490 000 ₽</mark</p>
+                    </div>
+                    <section id ="calculator" div class="calculator">
+                        <div class="selection">
+                            Выберете понравившийся автомобиль:
+                            <select id="type_flowers">
+                                <option value="13990000">BMW M3 Competition</option>
+                                <option value="11450000">BMW M5 Competition</option>
+                                <option value="2850000">BMW M3</option>
+                                <option value="5600000">BMW X5M</option>
+                                <option value="19490000">BMW X6M</option>
+                            </select><br/>
+                            Укажите количество: <input type="text" id="count" value="0"/>
+                            <button id="but">Рассчитать стоимость</button>
+                            <div id="result"></div>
+                        </div>
+                    </section>
+                </div>
+                <div id="contact">Если остались вопросы, обращайтесь к Никите Фоменко</div>
+    </body>
+</html>
