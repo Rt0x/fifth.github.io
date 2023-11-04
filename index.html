@@ -9,7 +9,6 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="style.css">
-         <script src="script.js" defer></script>
 </head>
     <body>
         <header class="fluid-container mb-4 bg-light d-flex flex-wrap justify-content-around">
@@ -59,21 +58,22 @@
                        <p style="text-align:center"> Год выпуска: 2023; <mark>Цена: 19 490 000 ₽</mark</p>
                     </div>
                     <section id ="calculator" div class="calculator">
-            <div class="selection">
-                Выберите авто:
-                <select id="type_flowers">
-                    <option value="13990000">BMW M3 Competition</option>
-                    <option value="11450000">BMW M5 Competition</option>
-                    <option value="2850000">BMW M3</option>
-                    <option value="5600000">BMW X5M</option>
-                    <option value="19490000">BMW X6M</option>
-                </select>
-                Укажите количество: <input type="text" id="count" value="0"/>
-                <button id="but">Рассчитать стоимость</button>
-                <div id="result"></div>
-            </div>
-        </section>
+                        <div class="selection">
+                            Выберете понравившийся автомобиль:
+                            <select id="type_cars">
+                                <option value="13990000">BMW M3 Competition</option>
+                                <option value="11450000">BMW M5 Competition</option>
+                                <option value="2850000">BMW M3</option>
+                                <option value="5600000">BMW X5M</option>
+                                <option value="19490000">BMW X6M</option>
+                            </select><br/>
+                            Укажите количество: <input type="text" id="count" value="0"/>
+                            <button id="but">Рассчитать стоимость</button>
+                            <div id="result"></div>
+                        </div>
+                    </section>
                 </div>
                 <div id="contact">Если остались вопросы, обращайтесь к Никите Фоменко</div>
     </body>
+    <script src='script.js'></script>
 </html>
